@@ -1,0 +1,125 @@
+
+body {
+	background-image: url("IT_background1.jpg");
+	background-color: blue;
+}
+h1 {
+	font-family: "Candara";
+	font-size: 48px;
+	margin-left: 42%;
+	margin-bottom: -14px;
+	color: black;
+	font-weight: bold;
+}
+p {
+	font-family: "Comic Sans";
+	font-size: 24px;
+	margin-left: 30%;
+	margin-bottom: 30px;
+	color: black;
+	font-weight: normal;
+}
+
+form {
+	background-color: #B8B8B8;
+	margin-left: 350px;
+	width: 700px;
+	padding: 12px;
+	border-style: ridge;
+}
+input:hover {
+	background-color: #ccffff;
+}
+select:hover {
+	background-color: #ccffff;
+}
+textarea:hover {
+	background-color: #ccffff;
+}
+.label {
+	margin-top: 20px;
+	margin-left: 40px;
+	font-family: "Trebuchet MS";
+	font-size: 18px;
+	font-weight: bold;
+}
+#name {
+	height: 25px;
+	width: 85%;
+	margin-top: 5px;
+	margin-left: 40px;
+	font-family: "Calibri Light";
+	font-size: 18px;
+}
+#email {
+	height: 25px;
+	width: 85%;
+	margin-top: 5px;
+	margin-left: 40px;
+	font-family: "Calibri Light";
+	font-size: 18px;
+}
+#age {
+	height: 25px;
+	width: 85%;
+	margin-top: 5px;
+	margin-left: 40px;
+	font-family: "Calibri Light";
+	font-size: 18px;
+}
+#currentRole {
+	height: 25px;
+	margin-left: 40px;
+	margin-top: 5px;
+	font-family: "Century Gothic";
+	font-size: 15px;
+}
+.improve {
+	margin-left: 40px;
+	width: 18px;
+	height: 18px;
+}
+
+.recommendation {
+	margin-left: 40px;
+	width: 18px;
+	height: 18px;
+}
+.recommend-label {
+	position: relative;
+	display: inline;
+	font-family: "Century Gothic";
+	font-size: 16px;
+}
+.improve-label {
+	position: relative;
+	display: inline;
+	font-family: "Century Gothic";
+	font-size: 16px;
+}
+#features {
+	margin-left: 40px;
+	margin-top: 5px;
+	height: 25px;
+	width: 85%;
+	font-family: "Century Gothic";
+	font-size: 15px;
+}
+#comment {
+	width: 84%;
+	margin-left: 40px;
+	margin-top: 5px;
+	font-family: "Calibri Light";
+	font-size: 18px;
+}
+#submit_button {
+	width:85%;
+	height: 40px;
+	margin-left:40px;
+	margin-top:30px;
+	margin-bottom: 30px;
+	font-family: "Verdana";
+	font-size: 20px;
+	background-color: cyan
+}
+

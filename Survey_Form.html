@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SURVEY FORM</title>
+		<link rel="stylesheet" type="text/css" href="Survey_Form.css">
+	</head>
+	<body>
+		<h1 id="title">Survey Form</h1>
+		<p id="description">Thank you for taking the time to help us improve our services</p>
+		
+		<form id="survey-form">
+			<legend for="name" id="name-label" class="label">Name</legend>
+			<input type="text" id="name" class="input_item" placeholder="Enter your name">
+			
+			<legend for="email" id="email-label" class="label">Email</legend>
+			<input type="email" id="email" class="input_item" placeholder="Enter your email" validate>
+			
+			<legend for="age" id="number-label" class="label">Age (Optional)</legend>
+			<input type="number" id="age" class="input_item" name="age" placeholder="Age" min="18", max="60">
+			
+			<legend for="currentRole" class="label">Which option best describes your current role?</legend>
+			<select id="currentRole" placeholder="Select current role">
+				<option value="Student">Student</option>
+				<option value="Full time">Full time job</option>
+				<option value="Full time learner">Full time learner</option>
+				<option value="Prefer not to say">Prefer not to say</option>
+				<option value="Other">Other</option>
+			</select>
+			
+			<legend class="label">Will you recommend freeCodeCamp to a friend?</legend>
+			<input type="radio" class="recommendation" name="recommend">
+			<label class="recommend-label">Definitely</label><br>
+			<input type="radio" class="recommendation" name="recommend">
+			<label class="recommend-label">Maybe</label><br>
+			<input type="radio" class="recommendation" name="recommend">
+			<label class="recommend-label">Not sure</label>
+
+			<legend class="label">What is your favorite feature of the freeCodeCamp?</legend>
+			<select id="features" name="feature">
+				<option value="Challenges">Challenges</option>
+				<option value="Projects">Projects</option>
+				<option value="Community">Community</option>
+				<option value="Open Source">Open Source</option>
+			</select>
+
+			<legend for="improve" class="label">What will you like to see improved?</legend>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Front-end Projects</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Back-end Projects</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Data Visualization</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Challenges</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Open Source Community</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Gitter help rooms</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Videos</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">City Meetups</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Wiki</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Forum</label><br>
+			<input type="checkbox" class="improve" name="improve">
+			<label class="improve-label">Additional Courses</label><br>
+
+			<legend for="comment" class="label">Any Comments or Suggestions?</legend>
+			<textarea id="comment" rows="4" columns="150" placeholder="Enter your comments here..."></textarea>
+
+			<input type="submit" id="submit_button" name="submit" value="Submit">
+
+		</form>
+	
+	</body>
+</html> 

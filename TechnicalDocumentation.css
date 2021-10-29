@@ -1,0 +1,59 @@
+.container {
+	display: grid;
+	grid-template-columns: 300px 1fr; /*In order to ensure the columns don't overlap, don't use auto in grid-template-columns*/
+	grid-template-rows: 60px auto;
+	grid-gap: 30px;
+	grid-template-areas: "header header" 
+						"navBarColumn mainDocColumn";
+}
+.header {
+	grid-area: header;
+	background-color: green;
+	position: fixed;
+}
+.navBarColumn {
+	grid-area: navBarColumn;
+	display: grid;
+	position: fixed; 
+	grid-template-columns: 300px;
+	grid-template-rows: 40px auto; 
+	grid-row-gap: 30px;
+	grid-template-areas: "navHeading" 
+						"navTitles";
+}
+.mainDocColumn {
+	grid-area: mainDocColumn;
+	line-height: 24px;
+	text-align: justify;
+	margin-right: 30px;
+}
+#navbar {
+	font: Geneva;
+	font-size: 18px;
+	line-height: 40px;
+}
+.navHeading {
+	grid-area: navHeading;
+
+}
+.navTitles {
+	grid-area: navTitles;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 590px;
+}
+a {
+	text-decoration: none;
+	color: black;
+	padding-left: 10px;
+}
+#main-doc {
+	
+}
+.exampleCode {
+	background-color: #F5F5F5;
+	margin-left: 20px;
+	padding-left: 30px;
+	width:950px;
+	height: 50px;
+}

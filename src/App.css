@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#appName {
+  color: #d3342f;
+  font-size: 50px;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#BreakAndSessionDiv {
+  display: inline-flex;
+  gap: 4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 26px;
+  margin: 1.5rem;
+  padding-top: 2rem
+}
+.number {
+  margin: 1rem;
+}
+#session {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 14rem;
+  border: 8px solid #124D51;
+  border-radius: 10%;
+  padding: 1rem;
+}
+#timer-label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+}
+#time-left {
+  font-size: 80px; 
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#controlDiv {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  gap: 0.6rem;
+  transform: scale(2);
+}
+#start-stop {
+  cursor: pointer;
+}
+#reset {
+  cursor: pointer;
+  margin-top: 4px;
+}
+.arrows {
+  transform: scaleY(0.8); 
+  cursor: pointer;
+}
+#authorText {
+  font-size: 18px;
+  color: #D32F2F;
+}
+#author {
+  font-size: 18px;
+  color: black;
+}
+@media (max-width:280px) {
+  #container {
+    transform: scale(0.8);
   }
-  to {
-    transform: rotate(360deg);
+  .arrows {
+    display: flex;
+    flex-direction: row;
+  }
+  .arrow{
+    margin-top:15px;
   }
 }
